@@ -1,4 +1,4 @@
-# Calculadora-Gorjeta
+# Calculadora de Gorjeta
 
 Aplicativo desenvolvido no curso de Desenvolvimento Android Completo 2021 - Crie 18 Apps na Udemy.
 
