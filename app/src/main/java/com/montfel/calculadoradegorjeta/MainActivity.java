@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvPorcentagem, tvGorjeta, tvTotal;
     private TextInputEditText etValor;
     private SeekBar sbPorcentagem;
-    private DecimalFormat f = new DecimalFormat("#.##");
+    private final DecimalFormat f = new DecimalFormat("#.##");
     private String valorRecuperado;
 
     @Override
@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         sbPorcentagem.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                tvPorcentagem.setText(progress + "%");
+                String progresso = progress + "%";
+                tvPorcentagem.setText(progresso);
                 calcular(progress);
             }
 
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStartTrackingTouch(SeekBar seekBar) {
                 valorRecuperado = etValor.getText().toString();
                 if (valorRecuperado.equals("") || valorRecuperado.equals(".")) {
-                    Toast.makeText(getApplicationContext(), "Digite um valor primeiro!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.digite_um_valor, Toast.LENGTH_SHORT).show();
                     tvGorjeta.setText(R.string.zerado);
                     tvTotal.setText(R.string.zerado);
                 }
@@ -61,8 +62,10 @@ public class MainActivity extends AppCompatActivity {
         if(!valorRecuperado.equals("") && !valorRecuperado.equals(".")) {
             double valorInput = Double.parseDouble(valorRecuperado);
             double valorGorjeta = valorInput * ((double) progress / 100);
-            tvGorjeta.setText("R$ " + f.format(valorGorjeta));
-            tvTotal.setText("R$ " + f.format((valorInput + valorGorjeta)));
+            String valorGorgetaText = "R$ " + f.format(valorGorjeta);
+            String valorInputText = "R$ " + f.format((valorInput + valorGorjeta));
+            tvGorjeta.setText(valorGorgetaText);
+            tvTotal.setText(valorInputText);
         }
     }
 }

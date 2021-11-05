@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Calculadora de gorjeta</string>
     <string name="zerado">R$ 0.00</string>
+    <string name="digite_um_valor">Digite um valor primeiro!</string>
+    <string name="digite_valor">Digite um valor:</string>
+    <string name="zero">0%</string>
+    <string name="gorjeta">Gorjeta</string>
+    <string name="total">Total</string>
 </resources>
