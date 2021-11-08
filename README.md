@@ -2,9 +2,9 @@
 
 Aplicativo desenvolvido no curso de Desenvolvimento Android Completo 2021 - Crie 18 Apps na Udemy.
 
-## APK
+## Link do App na Playstore
 
-  https://github.com/Montfel/Calculadora-Gorjeta/blob/main/app-debug.apk
+  https://play.google.com/store/apps/details?id=com.montfel.calculadoradegorjeta
 
 ## Screenshots
 
