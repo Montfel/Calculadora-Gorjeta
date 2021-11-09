@@ -3,6 +3,8 @@ package com.montfel.calculadoradegorjeta;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,12 +25,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         tvPorcentagem = findViewById(R.id.tvPorcentagem);
         tvGorjeta = findViewById(R.id.tvGorjeta);
         tvTotal = findViewById(R.id.tvTotal);
         etValor = findViewById(R.id.etValor);
         sbPorcentagem = findViewById(R.id.sbPorcentagem);
+
+        sbPorcentagem.setProgress(10);
+        tvPorcentagem.setText(R.string.dez_porcento);
+
         porcentagemListener();
+        textoListener();
+
+    }
+
+    private void textoListener() {
+        etValor.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                calcular(sbPorcentagem.getProgress());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {}
+        });
     }
 
     public void porcentagemListener() {
@@ -51,9 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
+            public void onStopTrackingTouch(SeekBar seekBar) {}
         });
     }
 
