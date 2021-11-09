@@ -81,11 +81,14 @@ public class MainActivity extends AppCompatActivity {
         valorRecuperado = etValor.getText().toString();
 
         if(!valorRecuperado.equals("")) {
-            String valorFormatado = valorRecuperado
-                    .replace(".", "")
-                    .replace(",", ".")
-                    .substring(1);
-            Log.i("valor", "calcular: " + valorFormatado);
+            String valorFormatado = valorRecuperado.replace(".", "")
+                                                   .replace(",", ".");
+
+            if (valorFormatado.codePointAt(0) == 160) {
+                valorFormatado = valorFormatado.substring(1);
+            }
+
+            Log.i("TAG", "calcularf:" + valorFormatado);
             double valorInput = Double.parseDouble(valorFormatado);
             double valorGorjeta = valorInput * ((double) progress / 100);
             String valorGorgetaText = "R$ " + f.format(valorGorjeta);
