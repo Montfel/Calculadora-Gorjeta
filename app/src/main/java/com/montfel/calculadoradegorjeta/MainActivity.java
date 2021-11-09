@@ -5,18 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.material.textfield.TextInputEditText;
-
 import java.text.DecimalFormat;
+import me.abhinay.input.CurrencyEditText;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvPorcentagem, tvGorjeta, tvTotal;
-    private TextInputEditText etValor;
+    private CurrencyEditText etValor;
     private SeekBar sbPorcentagem;
     private final DecimalFormat f = new DecimalFormat("#.##");
     private String valorRecuperado;
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         porcentagemListener();
         textoListener();
-
     }
 
     private void textoListener() {
@@ -81,8 +79,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void calcular(int progress) {
         valorRecuperado = etValor.getText().toString();
-        if(!valorRecuperado.equals("") && !valorRecuperado.equals(".")) {
-            double valorInput = Double.parseDouble(valorRecuperado);
+
+        if(!valorRecuperado.equals("")) {
+            String valorFormatado = valorRecuperado
+                    .replace(".", "")
+                    .replace(",", ".")
+                    .substring(1);
+            Log.i("valor", "calcular: " + valorFormatado);
+            double valorInput = Double.parseDouble(valorFormatado);
             double valorGorjeta = valorInput * ((double) progress / 100);
             String valorGorgetaText = "R$ " + f.format(valorGorjeta);
             String valorInputText = "R$ " + f.format((valorInput + valorGorjeta));

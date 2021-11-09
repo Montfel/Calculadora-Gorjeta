@@ -29,14 +29,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <me.abhinay.input.CurrencyEditText
             android:id="@+id/etValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
             android:hint="@string/digite_valor"
-            android:inputType="numberDecimal"
-            android:textSize="18sp" />
+            android:inputType="number"
+            android:textSize="18sp"/>
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
