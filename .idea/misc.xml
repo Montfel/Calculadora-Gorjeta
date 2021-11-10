@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/Calculadora-gorjeta/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Calculadora-gorjeta/app/src/main/res/layout-v26/activity_main.xml" value="0.38333333333333336" />
+        <entry key="..\:/AndroidStudioProjects/Calculadora-gorjeta/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/AndroidStudioProjects/Calculadora-gorjeta/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.332034632034632" />
         <entry key="..\:/AndroidStudioProjects/Calculadora-gorjeta/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3364035087719298" />
       </map>
