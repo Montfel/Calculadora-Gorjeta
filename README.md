@@ -36,11 +36,18 @@ Tabela de conteúdos
 
 ## 🎨 Layout
 
-<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Playstore.jpg" alt="screenshot1" width="500"/>
-<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Screenshot1.png" alt="screenshot1" width="500"/>
-<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Screenshot2.png" alt="screenshot2" width="500"/>
-<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Screenshot3.png" alt="screenshot2" width="500"/>
-<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Gif.gif" alt="gif" width="500"/>
+<p align="center">
+	<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Screenshot1.png" alt="screenshot1" width="300"/>
+	<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Screenshot2.png" alt="screenshot2" width="300"/>
+	<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Screenshot3.png" alt="screenshot2" width="300"/>
+</p>
+<p align="center">
+	<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Gif.gif" alt="gif" width="300"/>
+	<img src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/Playstore.jpg" alt="screenshot1" width="300"/>
+</p>
+
+
+
 
 ---
 
@@ -48,11 +55,9 @@ Tabela de conteúdos
 
 ### Pré-requisitos
 
-Para você executar o aplicativo, você vai precisar de um dispositivo com o sistema Android e baixar o app na Google Play Store.
+Para você executar o aplicativo, você vai precisar de um dispositivo com o sistema Android e baixar o app na Google Play Store a partir do link abaixo.
 
-#### Link do App na Playstore
-
-  https://play.google.com/store/apps/details?id=com.montfel.calculadoradegorjeta
+<a href="https://play.google.com/store/apps/details?id=com.montfel.calculadoradegorjetar"><img style="border-radius: 50%;" src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/disponivel-google-play-badge.png" width="400" alt=""/></a>
 
 ## 🛠 Tecnologias
 
