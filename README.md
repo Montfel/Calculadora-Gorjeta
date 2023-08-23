@@ -51,14 +51,6 @@ Tabela de conteúdos
 
 ---
 
-## 🚀 Como executar o projeto
-
-### Pré-requisitos
-
-Para você executar o aplicativo, você vai precisar de um dispositivo com o sistema Android e baixar o app na Google Play Store a partir do link abaixo.
-
-<a href="https://play.google.com/store/apps/details?id=com.montfel.calculadoradegorjeta"><img style="border-radius: 50%;" src="https://github.com/Montfel/Calculadora-Gorjeta/blob/main/images/disponivel-google-play-badge.png" width="400" alt=""/></a>
-
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
